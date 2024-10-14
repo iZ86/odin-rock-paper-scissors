@@ -1,3 +1,9 @@
+/** The score of the human. */
+let humanScore = 0;
+/** The score of the computer. */
+let computerScore = 0;
+
+
 /** Randomly generate rock, paper, or scissors and return it.
  * Used by computer.
  */
