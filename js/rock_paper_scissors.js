@@ -25,3 +25,16 @@ function getHumanChoice() {
 	return choice;
 }
 
+/** Plays one round of rock paper scissors. */
+function playRound(humanChoice, computerChoice) {
+	humanChoice = humanChoice.toLowerCase();
+	computerChoice = computerChoice.toLowerCase();
+	if ((humanChoice === "rock" && computerChoice === "scissors") || (humanChoice === "paper" && computerChoice === "rock") || (humanChoice === "scissors" && computerChoice === "paper")) {
+		humanScore++;
+		console.log("You Win! " + humanChoice + " beats " + computerChoice);
+	} else if ((computerChoice === "rock" && humanChoice === "scissors") || (computerChoice === "paper" && humanChoice === "rock") || (computerChoice === "scissors" && humanChoice === "paper")) {
+		computerScore++;
+		console.log("You lose! " + computerChoice + " beats " + humanChoice);
+	}
+}
+
